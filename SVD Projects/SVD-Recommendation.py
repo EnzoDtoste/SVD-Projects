@@ -115,6 +115,9 @@ X[1802] = -1
 X[2456] = -1
 X[2916] = 1
 
+# Movie Titles
+movie_titles = np.load('movie_titles.enr.npy')
+
 # %%
 # Projection of X in V
 X_L = X @ V
@@ -208,12 +211,10 @@ for i in range(len(X)):
          elif sum < 0:
             new_X.append(-1)
 
-# Print Results
 
+# Print Results
 for i in range(len(new_X)):
     if new_X[i] == 1:
-        print(str(i + 1) + ' + 1')
-    if new_X[i] == -1:
-        print(str(i + 1) + ' - 1')
+       print(movie_titles[i])
 
 

@@ -366,3 +366,15 @@ for i in range(len(new_X)):
         print(str(i + 1) + ' + 1')
     if new_X[i] == -1:
         print(str(i + 1) + ' - 1')
+
+
+#first = open('movie_titles.txt', "r", encoding='utf-8')
+
+#movie = []
+
+#for i in range(4499):
+#  line = first.readline(-1)
+#  terms = line.split(',')
+#  movie.append(terms[2])
+
+#np.save('movie_titles.enr', movie)
